@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="pth_titles">
+        <item>Title 1</item>
+        <item>Title 2</item>
+        <item>Title 3</item>
+        <item>Title 4</item>
+        <item>Title 5</item>
+        <item>Title 6</item>
+        <item>Title 7</item>
+        <item>Title 8</item>
+        <item>Title 9</item>
+        <item>Title 10</item>
+        <item>Title 11</item>
+        <item>Title 12</item>
+        <item>Title 13</item>
+        <item>Title 14</item>
+        <item>Title 15</item>
+        <item>Title 16</item>
+        <item>Title 17</item>
+        <item>Title 18</item>
+        <item>Title 19</item>
+        <item>Title 20</item>
+        <item>Title 21</item>
+        <item>Title 22</item>
+        <item>Title 23</item>
+        <item>Title 24</item>
+        <item>Title 25</item>
+        <item>Title 26</item>
+        <item>Title 27</item>
+        <item>Title 28</item>
+        <item>Title 29</item>
+        <item>Title 30</item>
+    </string-array>
+
+</resources>

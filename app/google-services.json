@@ -1,0 +1,93 @@
+{
+  "project_info": {
+    "project_id": "m-bonk-2302",
+    "project_number": "382030216447",
+    "name": "M-Bonk"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:382030216447:android:72979438405b8f5b",
+        "client_id": "android:com.eikontechnology.embong",
+        "client_type": 1,
+        "android_client_info": {
+          "package_name": "com.eikontechnology.embong",
+          "certificate_hash": []
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "382030216447-1fm1d1dp3a3gsse0i7tp45s4puud0mlo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "cloud_messaging_service": {
+          "status": 1,
+          "apns_config": []
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "google_signin_service": {
+          "status": 1
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:382030216447:android:10e7a87d75b6f73b",
+        "client_id": "android:com.eikontechnology.mbonk",
+        "client_type": 1,
+        "android_client_info": {
+          "package_name": "com.eikontechnology.mbonk",
+          "certificate_hash": []
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "382030216447-m15r2u2p0oskrjitn9q9hmtiudbk25cj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.eikontechnology.mbonk",
+            "certificate_hash": "6C70192FF7ACD0D17CA63DF780E94717109E6626"
+          }
+        },
+        {
+          "client_id": "382030216447-1fm1d1dp3a3gsse0i7tp45s4puud0mlo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "cloud_messaging_service": {
+          "status": 1,
+          "apns_config": []
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "google_signin_service": {
+          "status": 2
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "client_info": [],
+  "ARTIFACT_VERSION": "1"
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+    <title></title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width,initialscale=1"/>
+    <script type="text/javascript"
+            src="http://ecn.dev.virtualearth.net/mapcontrol/mapcontrol.ashx?v=7.0&mkt=id-ID"></script>
+
+    <script type="text/javascript">
+    var map = null;
+    var pinInfobox = null;
+
+    function GetMap(){
+        // Initialize the map
+        var map = new Microsoft.Maps.Map(document.getElementById("mapDiv"),
+        {
+            credentials:"Ar9_bNQfYVdoqVnjqoCnWn8mRKySBGZhK3xhrMh_cgTwqCmX5-5Ph93otrI-4Zw5",
+            center: new Microsoft.Maps.Location(47.576637, -122.167594),
+            mapTypeId: Microsoft.Maps.MapTypeId.road,
+            zoom: 13
+        });
+
+        var pin_location = new Microsoft.Maps.Location(47.576637, -122.167594);
+
+        // Add a pin to the center of the map
+        var pin = new Microsoft.Maps.Pushpin(pin_location, {text: '1'});
+
+        // Create the infobox for the pushpin
+        pinInfobox = new Microsoft.Maps.Infobox(pin.getLocation(),
+            {title: 'My Pushpin',
+            description: 'This pushpin is located at (0,0).',
+            visible: false,
+            offset: new Microsoft.Maps.Point(0,15)});
+
+        // Add handler for the pushpin click event.
+        Microsoft.Maps.Events.addHandler(pin, 'click', displayInfobox);
+
+        // Hide the infobox when the map is moved.
+        Microsoft.Maps.Events.addHandler(map, 'viewchange', hideInfobox);
+
+        // Add the pushpin and infobox to the map
+        map.entities.push(pin);
+        map.entities.push(pinInfobox);
+    }
+
+    function displayInfobox(e){
+        pinInfobox.setOptions({ visible:true });
+    }
+
+    function hideInfobox(e){
+        pinInfobox.setOptions({ visible:false });
+    }
+
+    </script>
+</head>
+<body onload="GetMap();">
+    <div id='mapDiv' style="position:absolute; width:100%; height:100%; left:0px; top:0px; right:0px; bottom:0px;"></div>
+</body>
+</html>
